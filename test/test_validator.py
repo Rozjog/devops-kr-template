@@ -1,4 +1,6 @@
 # tests/test_validator.py
+from validator import validate_email, validate_phone, validate_snils
+
 def test_validate_email():
     assert validate_email("test@example.com") == True
     assert validate_email("invalid") == False
